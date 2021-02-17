@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name stm32h730vbtx)(type Legacy)(uri ${KIPRJMOD}/stm32h730vbtx.lib)(options "")(descr ""))
+  (lib (name eec)(type Legacy)(uri ${KIPRJMOD}/eec.lib)(options "")(descr ""))
+  (lib (name L834-1G1T-91)(type Legacy)(uri ${KIPRJMOD}/L834-1G1T-91.lib)(options "")(descr ""))
+  (lib (name 105162-0001)(type Legacy)(uri ${KIPRJMOD}/105162-0001.lib)(options "")(descr ""))
+  (lib (name stm32h730zbtx)(type Legacy)(uri ${KIPRJMOD}/stm32h730zbtx.lib)(options "")(descr ""))
+  (lib (name logo)(type Legacy)(uri ${KIPRJMOD}/logo.lib)(options "")(descr ""))
+)
