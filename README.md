@@ -54,6 +54,8 @@ These capabilities enable multiple interesting applications:
 
 [Download in PDF format](docs/schematic.pdf)
 
+[Octopart BoM](https://octopart.com/bom-tool/3tX8J6Z1)
+
 ![docs/h730duino.svg](docs/h730duino.svg)
 ![docs/h730duino.svg](docs/debugger-Debug.svg)
 ![docs/h730duino.svg](docs/ethernet-Ethernet.svg)
