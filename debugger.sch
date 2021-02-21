@@ -24,28 +24,18 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    4550 3300
 	1    0    0    -1  
 $EndComp
-Text HLabel 5400 2800 2    50   Output ~ 0
+Text HLabel 6000 2800 2    50   Output ~ 0
 SWCK
-Text HLabel 5400 2900 2    50   BiDi ~ 0
+Text HLabel 6000 2900 2    50   BiDi ~ 0
 SWDIO
-Wire Wire Line
-	5150 2800 5400 2800
-Wire Wire Line
-	5400 2900 5150 2900
-Text HLabel 5400 3000 2    50   Output ~ 0
+Text HLabel 6000 3000 2    50   Output ~ 0
 UART_TX
-Text HLabel 5400 3100 2    50   Input ~ 0
+Text HLabel 6000 3100 2    50   Input ~ 0
 UART_RX
-Wire Wire Line
-	5400 3000 5150 3000
-Wire Wire Line
-	5150 3100 5400 3100
 NoConn ~ 5150 3300
 NoConn ~ 5150 3400
-Text HLabel 5400 3200 2    50   Output ~ 0
+Text HLabel 6000 3200 2    50   Output ~ 0
 ~RESET_OUT
-Wire Wire Line
-	5400 3200 5150 3200
 NoConn ~ 5150 3500
 Text Label 5150 3700 0    50   ~ 0
 USBD_D+
@@ -287,4 +277,144 @@ Wire Wire Line
 	9200 2950 9200 3200
 Wire Wire Line
 	9200 3200 9400 3200
+Text Label 7600 5450 0    50   ~ 0
+DBG_SWDIO
+Text Label 7600 5350 0    50   ~ 0
+DBG_SWCK
+Text Label 7600 5150 0    50   ~ 0
+~DBGR
+Text Label 6350 4400 0    50   ~ 0
+DBGB
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 60341504
+P 6200 4300
+F 0 "JP2" V 6246 4348 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 6155 4348 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 4300 50  0001 C CNN
+F 3 "~" H 6200 4300 50  0001 C CNN
+	1    6200 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 4400 6350 4400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60346736
+P 6200 4200
+AR Path="/60346736" Ref="#PWR?"  Part="1" 
+AR Path="/60158DDC/60346736" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 6200 4050 50  0001 C CNN
+F 1 "+3.3V" H 6215 4373 50  0000 C CNN
+F 2 "" H 6200 4200 50  0000 C CNN
+F 3 "" H 6200 4200 50  0000 C CNN
+	1    6200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J5
+U 1 1 60372EBF
+P 4400 5450
+F 0 "J5" H 3957 5496 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 3957 5405 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4400 5450 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4050 4200 50  0001 C CNN
+	1    4400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60372EC5
+P 4400 4850
+AR Path="/60372EC5" Ref="#PWR?"  Part="1" 
+AR Path="/60158DDC/60372EC5" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 4400 4700 50  0001 C CNN
+F 1 "+3.3V" H 4415 5023 50  0000 C CNN
+F 2 "" H 4400 4850 50  0000 C CNN
+F 3 "" H 4400 4850 50  0000 C CNN
+	1    4400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60372ECB
+P 4400 6050
+AR Path="/60372ECB" Ref="#PWR?"  Part="1" 
+AR Path="/60158DDC/60372ECB" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 4400 5800 50  0001 C CNN
+F 1 "GND" H 4405 5877 50  0000 C CNN
+F 2 "" H 4400 6050 50  0000 C CNN
+F 3 "" H 4400 6050 50  0000 C CNN
+	1    4400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6050 4400 6050
+Connection ~ 4400 6050
+Wire Wire Line
+	5150 2800 6000 2800
+Wire Wire Line
+	5150 2900 6000 2900
+Wire Wire Line
+	5150 3000 6000 3000
+Wire Wire Line
+	5150 3100 6000 3100
+Wire Wire Line
+	5150 3200 6000 3200
+Text Label 5300 2800 0    50   ~ 0
+TGT_SWCK
+Text Label 5300 2900 0    50   ~ 0
+TGT_SWDIO
+Text Label 5300 3200 0    50   ~ 0
+~TGT_RST
+Text Label 4900 5350 0    50   ~ 0
+TGT_SWCK
+Text Label 4900 5450 0    50   ~ 0
+TGT_SWDIO
+NoConn ~ 4900 5550
+NoConn ~ 4900 5650
+Text Label 4900 5150 0    50   ~ 0
+~TGT_RST
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J6
+U 1 1 6037A7B7
+P 7100 5450
+F 0 "J6" H 6657 5496 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 6657 5405 50  0000 R CNN
+F 2 "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical" H 7100 5450 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 6750 4200 50  0001 C CNN
+	1    7100 5450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7600 5550
+NoConn ~ 7600 5650
+$Comp
+L power:GND #PWR?
+U 1 1 6038215C
+P 7100 6050
+AR Path="/6038215C" Ref="#PWR?"  Part="1" 
+AR Path="/60158DDC/6038215C" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 7100 5800 50  0001 C CNN
+F 1 "GND" H 7105 5877 50  0000 C CNN
+F 2 "" H 7100 6050 50  0000 C CNN
+F 3 "" H 7100 6050 50  0000 C CNN
+	1    7100 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 6050 7000 6050
+Connection ~ 7100 6050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60383929
+P 7100 4850
+AR Path="/60383929" Ref="#PWR?"  Part="1" 
+AR Path="/60158DDC/60383929" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 7100 4700 50  0001 C CNN
+F 1 "+3.3V" H 7115 5023 50  0000 C CNN
+F 2 "" H 7100 4850 50  0000 C CNN
+F 3 "" H 7100 4850 50  0000 C CNN
+	1    7100 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
