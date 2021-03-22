@@ -54,9 +54,9 @@ These capabilities enable multiple interesting applications:
 
 [Download in PDF format](docs/schematic.pdf)
 
-[Octopart BoM](https://octopart.com/bom-tool/3tX8J6Z1)
+[Octopart BoM](https://octopart.com/bom-tool/OT2Ji446)
 
-[CSV BoM (octpart compatible)](docs/octopart-20210221_h730_duino.csv)
+[CSV BoM (octpart compatible)](docs/20210322_stm32h73x_duino_csv.csv)
 
 ![docs/h730duino.svg](docs/h730duino.svg)
 ![docs/h730duino.svg](docs/debugger-Debug.svg)
