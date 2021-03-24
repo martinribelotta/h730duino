@@ -443,7 +443,7 @@ U 1 1 605C5CA9
 P 5700 4300
 F 0 "U9" H 5650 4400 50  0000 C CNN
 F 1 "KSZ8081RNA" H 5700 4300 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7100 3300 50  0001 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 7100 3300 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00002199A.pdf" H 3450 4500 50  0001 C CNN
 	1    5700 4300
 	1    0    0    -1  
