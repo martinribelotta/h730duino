@@ -50,6 +50,29 @@ These capabilities enable multiple interesting applications:
 - Programmable instrumentation system.
 - Network laboratory instrument.
 
+## Layout
+
+![layout](docs/sheet1.png)
+
+ 1. MCU STM32H730/733/732
+ 2. QSPI flash (4/8/16/32MiB)
+ 3. HyperRAM (8MiB)
+ 4. 8MHz crystal
+ 5. 32.768KHz RTC crystal
+ 6. 5V in regulator
+ 7. 3.3V main regulator
+ 8. CMSIS-DAP debugger
+ 9. Ethernet PHY
+ 10. USB OTG Full Speed (connected to MCU)
+ 11. Reset button
+ 12. User LED
+ 13. STM32H7 BOOT jumper
+ 14. MicroSD connector
+ 15. SWD MCU connector
+ 16. CMSIS-DAP boot jumper
+ 17. CMSIS-DAP pogo pins for programming
+
+
 ## Schematics
 
 [Download in PDF format](docs/schematic.pdf)
@@ -65,4 +88,4 @@ These capabilities enable multiple interesting applications:
 
 ## License
 
-[MIT License](LICENCE.txt)
+[MIT License](LICENCE.tx)
