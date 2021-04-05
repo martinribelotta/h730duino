@@ -5,4 +5,5 @@
   (lib (name 105162-0001)(type Legacy)(uri ${KIPRJMOD}/105162-0001.lib)(options "")(descr ""))
   (lib (name stm32h730zbtx)(type Legacy)(uri ${KIPRJMOD}/stm32h730zbtx.lib)(options "")(descr ""))
   (lib (name logo)(type Legacy)(uri ${KIPRJMOD}/logo.lib)(options "")(descr ""))
+  (lib (name cyperss-hyperram)(type Legacy)(uri ${KIPRJMOD}/cyperss-hyperram.lib)(options "")(descr ""))
 )
