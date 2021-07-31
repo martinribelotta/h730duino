@@ -2728,14 +2728,6 @@ Text Label 6750 6350 2    50   ~ 0
 OCTOSPIM_P2_IO2
 Text Label 6750 6450 2    50   ~ 0
 OCTOSPIM_P2_IO3
-Text Label 6750 6550 2    50   ~ 0
-OCTOSPIM_P1_IO3
-Text Label 6750 6650 2    50   ~ 0
-OCTOSPIM_P1_IO2
-Text Label 6750 6750 2    50   ~ 0
-OCTOSPIM_P1_IO0
-Text Label 6750 6850 2    50   ~ 0
-OCTOSPIM_P1_IO1
 Text Label 3950 5900 0    50   ~ 0
 OCTOSPIM_P2_DQS
 Text Label 6750 7050 2    50   ~ 0
@@ -2933,4 +2925,12 @@ F 3 "" H 6000 5700 50  0000 C CNN
 	1    6000 5700
 	1    0    0    -1  
 $EndComp
+Text Label 6750 6550 2    50   ~ 0
+OCTOSPIM_P1_IO1
+Text Label 6750 6650 2    50   ~ 0
+OCTOSPIM_P1_IO0
+Text Label 6750 6750 2    50   ~ 0
+OCTOSPIM_P1_IO2
+Text Label 6750 6850 2    50   ~ 0
+OCTOSPIM_P1_IO3
 $EndSCHEMATC
