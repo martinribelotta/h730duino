@@ -2,6 +2,8 @@
 
 Arduino form factor and software compatible board with giant cortex-m7 at 550MHz.
 
+See test firmware [here](https://github.com/martinribelotta/h730duino-firmware)
+
 ![banner](docs/h730duino.png)
 
 ## Characteristics
